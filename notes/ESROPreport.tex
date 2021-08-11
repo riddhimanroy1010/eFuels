@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{index}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{biblatex}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+\geometry{left=2.7cm,right=2.7cm,top=2.7cm,bottom=2.7cm}
+\graphicspath{{images/}}
+
+\title{
+    \vspace{-2em}
+    \textbf{ESROP - UofT Final Report}
+    \large}
+\author{Riddhiman Roy}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\doublespacing
+
+Over the course of the summer, I worked, under the supervision of Professor Daniel Posen, as part of the Saxe-Posen-Maclean (SPM) research group as a part of the Civil and Mineral Engineering Department of Engineering at UofT. The SPM group specializes in climate research and modelling. It predicts the impacts of greenhouse gas (GHG) emissions from sources from transportation on the global climate. During the course of the ESROP-UofT research placement, I took part in two projects - the first being evaluating the feasibility of transferring a climate model for the US light duty vehicle fleet from R to Python (FLAME), and the second being evaluating how e-fuels could be integrated into the FLAME model to predict the impacts of e-fuels on GHG emissions.\\
+
+During the first two months of the summer, I worked on the feasibility project. I started with an introduction to the model by Professor Alexandre Milovanoff, who wrote the model. The model is written in R, which is a popular language within the data analysis community. It is quite mature with plenty of well developed packages and modules that make it efficient to run. However, it isn't very popular outside that community, limiting the approachability and accesibility of R based models. Therefore, I set out to investigate approaches to translating the model to Python which, superior popularity and accesibility aside, has come a long way with its data analysis packages and optimizations. I started with a complete translation of the model with some structural changes that I thought would be suited to Python, such as making more use of classes and integrating singular use functions into them directly. All in all, for this approach, I ended up bringing over 11 functions from the original R model. These functions, approximately 1100 lines in python, initialize a vehicle type with basic properties such as material composition for components and subcomponents defined by sources such as GREET, fuel consumption projects, battery capacity etc. The other approach I looked into was writing a wrapper that would allow people to run the model using Python and analyze its results. However, I quickly found that a wrapper for Python is quite problematic since the package has severe compatibility issues with Windows. While I have it running in an online notebook, it does not run at all in windows. The first half of the project was very self-guided where I only had weekly check-ins, working entirely on my own as a team of one. This half of the summer was my first experience in working on a large scale project like this and personally, I think working on my own helped me develop an unexpected work ethic where I tried to keep to a general '9-5' schedule. However, as the summer progressed and I took on other projects in clubs as well as other commitments, that schedule quickly fell to a loose guideline. However, it formed the backbone for my drive and work ethic for the entire summer. I found that in research, I could allow myself more leeway when I needed it. Leading myself and seeing where possible approaches take me are freedoms I first found while working these research projects.\\
+
+My second project is working to integrate e-fuels into that same climate model. This project, with a more defined team, meeting schedule and general structure, seeks to investigate e-fuels, which are fuels produced from renewable electricity, and their emissions projections to find out how they can be integrated into the existing model. This project is still quite young, where my team and I are reviewing literature. We're beginning to ask and answer questions such as how gasoline and diesel use can be offset by e-fuels and estimating the effect on GHG emissions. While it was very nice to work on my own in the first two months, it is very refreshing to work in a team and have them to bounce ideas off. They helped catch issues early on in my literature reviews and helped me become a better researcher, showing me what to look for in papers and how to develop succinct summaries. A team also helped maintain a schedule more rigidly, which kept the project progressing at a steady pace.\\
+
+As an engineering student in Engineering Science, I often find myself wondering if I should focus more on the engineering or the science portion of my degree. There's always the choice between research and internships. Spending the first summer of my university career in a research placement has confirmed and reinforced my decision to go into Engineering Science. I feel like I would have lost the opportunity to experience freedom in my work. I would have lost the opportunity to seriously pursue climate research and consider it as a serious path forward (in contrast to aerospace engineering, which is a very wild spectrum, I know!). Working in this amazing research group, over the course of these four months, has made me not just a better researcher but a better student, endowing me with critical skills for analysis, critique and leadership - both self and team based - which are crucial to something as wide open as research. This placement has been incredibly rewarding. So much so that I hope to be able to contribute to the e-fuels project during the term and see it through with my team. 
+
+
+
+
+\end{document}
